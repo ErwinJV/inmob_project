@@ -17,7 +17,7 @@ class RouteServiceProvider extends ServiceProvider
      *
      * @var string
      */
-    public const HOME = 'inmob-admin/inicio';
+    public const HOME = '/inmob-admin';
 
     /**
      * The controller namespace for the application.

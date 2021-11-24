@@ -1,47 +1,83 @@
 
-<section class="text-gray-400 bg-white body-font">
-  <div class="container px-5 py-24 mx-auto">
-    
-    <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
-      <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
-        <div class="rounded-lg h-64 overflow-hidden">
-          <img alt="content" class="object-cover object-top h-full w-full" src="{{Storage::url('landin_page/freelancer.png')}}">
+
+<section class="text-gray-600 body-font pb-4 h-auto md:h-screen bg-cover bg-fixed " style = "background-image:url({{Storage::url('landin_page/hero_landing.jpg')}})" >
+  
+  <div class="container mx-auto flex flex-col px-5 pt-12 md:pt-24 justify-center items-center">
+    {{--<img class="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded" alt="hero" src="https://dummyimage.com/720x600"> --}}
+   
+   <iframe width="320" height="240" class=" mb-10 shadow-2xl  rounded" allowfullscreen src="//storage.googleapis.com/vrview/2.0/index.html?image=//URL-de-la-imagen-convertida.jpg&is_stereo=true" > </iframe>
+   
+    <div class="w-full md:w-2/3 flex flex-col  items-center text-center">
+     
+      <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">Knausgaard typewriter readymade marfa</h1>
+      <p class="mb-8 leading-relaxed text-white">Kickstarter biodiesel roof party wayfarers cold-pressed. Palo santo live-edge tumeric scenester copper mug flexitarian. Prism vice offal plaid everyday carry. Gluten-free chia VHS squid listicle artisan.</p>
+      
+       <div class="flex flex-col md:flex-row  w-full justify-center items-center md:justify-start">
+        <div class="relative mr-4 w-full mb-2  xl:w-1/2 w-2/4">
+         
+          <select name="hero-field" class="w-full bg-gray-100 rounded border bg-opacity-50 border-gray-300 focus:ring-2 focus:ring-indigo-200 focus:bg-transparent focus:border-indigo-500 text-black font-bold focus:text-white outline-none  py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+             
+             <option>Casas</option>
+             <option>Apartamentos</option>
+             
+          </select>
         </div>
-        <h2 class="text-xl font-medium title-font text-white mt-5">Shooting Stars</h2>
-        <p class="text-base leading-relaxed mt-2">Swag shoindxgoitch literally meditation subway tile tumblr cold-pressed. Gastropub street art beard dreamcatcher neutra, ethical XOXO lumbersexual.</p>
-        <a class="text-indigo-400 inline-flex items-center mt-3">Learn More
-          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
-            <path d="M5 12h14M12 5l7 7-7 7"></path>
-          </svg>
-        </a>
-      </div>
-      <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
-        <div class="rounded-lg h-64 overflow-hidden">
-          <img alt="content" class="object-cover object-center h-full w-full" src="{{Storage::url('landin_page/tour-virtual.png')}}" >
+        
+         <div class="relative mr-4 w-full  mb-2 xl:w-1/2 w-2/4">
+         
+          <select name="hero-field" class="w-full mx-auto  bg-gray-100 rounded border bg-opacity-50 border-gray-300 focus:ring-2 focus:ring-indigo-200 focus:bg-transparent focus:border-indigo-500 text-black font-bold outline-none focus:text-white py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+             
+             <option>En venta</option>
+             <option>En alquiler</option>
+             
+          </select>
+       
         </div>
-        <h2 class="text-xl font-medium title-font text-white mt-5">The Catalyzer</h2>
-        <p class="text-base leading-relaxed mt-2">Swag shoindxigoitch literally meditation subway tile tumblr cold-pressed. Gastropub street art beard dreamcatcher neutra, ethical XOXO lumbersexual.</p>
-        <a class="text-indigo-400 inline-flex items-center mt-3">Learn More
-          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
-            <path d="M5 12h14M12 5l7 7-7 7"></path>
-          </svg>
-        </a>
-      </div>
-      <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
-        <div class="rounded-lg h-64 overflow-hidden">
-          <img alt="content" class="  h-full w-full" src="{{Storage::url('landin_page/send.png')}}" >
+        
+         <div class="relative mr-4 w-full mb-2  xl:w-1/2 w-2/4">
+         
+          <input type="search" id="hero-field" name="hero-field" class="w-full bg-gray-100 rounded border bg-opacity-50 border-gray-300 focus:ring-2 focus:ring-indigo-200 focus:bg-transparent focus:border-indigo-500 text-black font-bold focus:text-white outline-none  py-1 px-3 leading-8 transition-colors duration-200 ease-in-out placeholder-black focus:placeholder-white" placeholder="Ubicacion o titulo...">
         </div>
-        <h2 class="text-xl font-medium title-font text-white mt-5">The 400 Blows</h2>
-        <p class="text-base leading-relaxed mt-2">Swag shoindegoitch literally meditation subway tile tumblr cold-pressed. Gastropub street art beard dreamcatcher neutra, ethical XOXO lumbersexual.</p>
-        <a class="text-indigo-400 inline-flex items-center mt-3">Learn More
-          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
-            <path d="M5 12h14M12 5l7 7-7 7"></path>
-          </svg>
-        </a>
+        
+        <div class="flex mb-2 text-white bg-transparent "> 
+           
+            <i class=" self-center animate-spin fas fa-redo-alt text-4xl ">
+         
+            </i>
+            
+            <i class="hidden self-center fas fa-search text-4xl cursor-pointer mt-3 md:mt-0 ">
+         
+            </i>
+  
+  
+            
+       </div>
+      
       </div>
+      
+      
+     
+      
+      
     </div>
   </div>
 </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

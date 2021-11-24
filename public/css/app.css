@@ -33417,6 +33417,29 @@ select {
   /*Set to match the Tailwind colour you want the active one to be */
 }
 
+.thumbnail{
+  width:120px;
+  height:120px;
+  display:inline-block;
+  vertical-align:middle;
+  border:solid 2px #ccc;
+  background-size:cover;
+  position: relative;
+}
+
+.close-button{
+  width: 20px;
+  height:20px;
+  background-color:black;
+  color:white;
+  text-align:center;
+  position:absolute;
+  top: 5px;
+  left:5px;
+  border-radius:100px;
+  cursor:pointer;
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;

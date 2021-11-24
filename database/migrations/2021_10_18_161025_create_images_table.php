@@ -20,6 +20,7 @@ class CreateImagesTable extends Migration
             $table->string('imageable_type');
             $table->unsignedBigInteger('user_id');
             
+            
             //Foreign Keys
             
             $table->foreign('user_id')

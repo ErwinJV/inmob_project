@@ -9,7 +9,7 @@ class Image extends Model
 {
     use HasFactory;
     
-    
+      protected $guarded = ['id', 'create_at', 'updated_at'];
     
     /**
      * Relacion polimorfica

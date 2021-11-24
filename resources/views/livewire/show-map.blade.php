@@ -1,6 +1,6 @@
 <div class="ml-auto">
    <!-- Map Trigger -->
-      <label wire:click="$set('open', true)" class="text-white  rounded-lg ml-auto bg-blue-800 hover:bg-blue-700 p-2 cursor-pointer flex justify-center items-center">
+      <label wire:click="$set('open', true)" class="text-white  rounded-lg ml-auto bg-blue-800 shadow-xl  hover:bg-blue-700 p-2 cursor-pointer flex justify-center items-center">
         Ver mapa<i  @click="$dispatch('')" class="fas fa-map ml-2 animate-pulse shadow-lg text-white"></i>
       </label>
       <!-- ./ Map Trigger -->

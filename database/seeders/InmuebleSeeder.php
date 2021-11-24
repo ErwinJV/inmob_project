@@ -16,14 +16,15 @@ class InmuebleSeeder extends Seeder
      */
     public function run()
     {
-        $inmuebles = Inmueble::factory(15)->create();
+        $inmuebles = Inmueble::factory(30)->create();
         
         foreach($inmuebles as $inmueble){
         
            Image::factory(6)->create([
             
             'imageable_id' => $inmueble->id,
-            'imageable_type' => Inmueble::class
+            'imageable_type' => Inmueble::class,
+    
            
            ]);
         }

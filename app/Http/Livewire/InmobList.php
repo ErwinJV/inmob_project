@@ -16,7 +16,14 @@ class InmobList extends Component
     public $readyToLoad = false;
     
     
-   
+    
+    
+     public function updatingSector()
+    {
+    
+       $this->resetPage();
+    
+    }
     
     public function mount($category)
     {
@@ -37,7 +44,7 @@ class InmobList extends Component
     public function render()
     {
        
-      $estados = ['Todos' => 0, 'Venta' => 1, 'Alquiler' => 2];   
+      $estados = ['Todos' => 0, ' En venta' => 1, ' En alquiler' => 2];   
      
         //Verificamos que el componente este listo
          

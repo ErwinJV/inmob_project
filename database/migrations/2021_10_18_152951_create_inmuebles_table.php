@@ -27,9 +27,12 @@ class CreateInmueblesTable extends Migration
             $table->unsignedBigInteger('hab');
             $table->unsignedBigInteger('est')->nullable();
             $table->unsignedBigInteger('pool')->nullable();
-            $table->unsignedBigInteger('size');
+            $table->unsignedBigInteger('area');
             $table->unsignedBigInteger('user_id');
             $table->unsignedBigInteger('inmob_category_id');
+            $table->string('tour_virtual', 100);
+            $table->enum('publish', ['0','1']);
+            
             
             //Foreign Keys
             

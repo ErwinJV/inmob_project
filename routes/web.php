@@ -3,6 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\InmuebleController;
 use App\Http\Controllers\Admin\Dashboard;
+use App\Http\Livewire\IngresarInmueble;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -25,15 +27,17 @@ Route::get('i/{inmueble}', [InmuebleController::class, 'detail'])->name('inmuebl
 
 //Admin Routes
 
-Route::middleware(['auth:sanctum', 'verified'])->prefix('admin')->group(function () {
-    Route::get('', [Dashboard::class, 'index'] )->name('admin.inicio');
+Route::middleware(['auth:sanctum', 'verified'])->prefix('inmob-admin')->group(function () {
+    Route::get('/', [Dashboard::class, 'index'] )->name('admin.inicio');
     //Route::get('users', [Dashboard::class, 'users'] )->name('admin.users');
     //Route::get('categories', [Dashboard::class, 'categories'] )->name('admin.categories');
     //Route::get('roles', [Dashboard::class, 'roles'] )->name('admin.roles');
-    //Route::get('inmuebles', [Dashboard::class, 'inmuebles'] )->name('admin.inmuebles');
-
+    Route::get('inmuebles', [Dashboard::class, 'inmuebles'] )->name('admin.inmuebles');
+    
 
 });
+
+
 
 
 

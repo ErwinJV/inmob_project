@@ -11,6 +11,8 @@ class Inmueble extends Model
 {
     use HasFactory;
     
+    protected $guarded = ['id', 'create_at', 'updated_at'];
+    
       /**
      * Retornar el slug como llave
      *
@@ -42,7 +44,7 @@ class Inmueble extends Model
      public function inmobCategory()
      {
          
-         return belongsTo('App\Models\InmobCategory');
+         return $this->belongsTo('App\Models\InmobCategory');
               
      }
      

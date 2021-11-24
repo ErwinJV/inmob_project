@@ -13,4 +13,11 @@ class Dashboard extends Controller
         return view('dashboard');
     
     }
+    
+    public function inmuebles()
+    {
+    
+        return view('admin.inmuebles');
+    
+    }
 }
